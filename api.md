@@ -51,3 +51,16 @@
   ]
 }
 ```
+
+# 返信候補取得
+
+## GET http://sert.luna.ddns.vc:3000/response_candidates
+
+### Response
+
+```
+[
+  { "id": 1, "candidate": "どうしたの?" },
+  { "id": 2, "candidate": "好き" },
+]
+```
