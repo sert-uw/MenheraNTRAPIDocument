@@ -31,6 +31,6 @@
     "is_couple": boolean,
     "spirit": 30,
     "dependent": 60
-  }
+  },
 ]
 ```
