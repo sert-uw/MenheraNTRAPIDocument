@@ -6,7 +6,8 @@
 
 ```
 {
-  "name": "user_name"
+  "name": "user_name",
+  "uuid": "usid-dfsa-dfst"
 }
 ```
 
@@ -27,10 +28,13 @@
 ```
 [
   {
-    "name": "naoko",
+    "id": "1",
+    "name": "naoka",
     "is_couple": boolean,
     "spirit": 30,
     "dependent": 60
   },
 ]
 ```
+
+# メッセージ取得
