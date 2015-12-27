@@ -37,6 +37,19 @@
 ]
 ```
 
+# 返信候補取得
+
+## GET http://sert.luna.ddns.vc:3000/response_candidates
+
+### Response
+
+```
+[
+  { "id": 1, "candidate": "どうしたの?" },
+  { "id": 2, "candidate": "好き" },
+]
+```
+
 # メッセージ取得
 
 ## GET http://sert.luna.ddns.vc:3000/girls/:id/messages
@@ -52,15 +65,16 @@
 }
 ```
 
-# 返信候補取得
+# メッセージへ返信
 
-## GET http://sert.luna.ddns.vc:3000/response_candidates
+## POST http://sert.luna.ddns.vc:3000/girls/:id/messages
 
-### Response
+### Request
 
 ```
-[
-  { "id": 1, "candidate": "どうしたの?" },
-  { "id": 2, "candidate": "好き" },
-]
+{
+  "response_id": 1
+}
 ```
+
+### Response 200
