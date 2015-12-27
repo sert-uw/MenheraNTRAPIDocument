@@ -63,9 +63,23 @@
 ]
 ```
 
+# メッセージ既読
+
+## PUT http://sert.luna.ddns.vc:3000/girls/:id/messages
+
+### Request
+
+どのメッセージまで既読にするか
+
+```
+{ "id": 30 }
+```
+
+### Response 200
+
 # メッセージへ返信
 
-## POST http://sert.luna.ddns.vc:3000/girls/:id/messages
+## POST http://sert.luna.ddns.vc:3000/girls/:id/responses
 
 ### Request
 
