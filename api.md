@@ -39,7 +39,7 @@
 
 # 返信候補取得
 
-## GET http://sert.luna.ddns.vc:3000/response_candidates
+## GET http://sert.luna.ddns.vc:3000/girls/:id/response_candidates
 
 ### Response
 
@@ -57,12 +57,10 @@
 ### Response
 
 ```
-{
-  "messages": [
-    "寂しい",
-    "なんでもない",
-  ]
-}
+[
+  { "id": 1, "body": "寂しい" },
+  { "id": 2, "body": "なんでもない" },
+]
 ```
 
 # メッセージへ返信
