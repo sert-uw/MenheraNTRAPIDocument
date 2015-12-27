@@ -38,3 +38,16 @@
 ```
 
 # メッセージ取得
+
+## GET http://sert.luna.ddns.vc:3000/girls/:id/messages
+
+### Response
+
+```
+{
+  "messages": [
+    "寂しい",
+    "なんでもない",
+  ]
+}
+```
