@@ -79,16 +79,15 @@
 
 # メッセージ既読
 
-## PUT http://hostname:port/girls/:girl_id/messages
+## PUT http://hostname:port/girls/:girl_id/messages/:id
 
 ### Request
 
-どのメッセージまで既読にするか
+どのメッセージまで既読にするか(:idで指定)
 
 ```
 {
-  "token": "abcd1234efg",
-  "id": 30
+  "token": "abcd1234efg"
 }
 ```
 
