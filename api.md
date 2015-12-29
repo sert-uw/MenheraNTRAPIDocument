@@ -7,7 +7,9 @@
 ```
 {
   "name": "user_name",
-  "uuid": "usid-dfsa-dfst"
+  "uuid": "usid-dfsa-dfst",
+  "device_type": "android or ios",
+  "device_token": "dfdsgokjsadf"
 }
 ```
 
