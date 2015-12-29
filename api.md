@@ -45,7 +45,7 @@
 
 # 返信候補取得
 
-## GET http://hostname:port/girls/:id/response_candidates?token=abcd1234efg
+## GET http://hostname:port/girls/:girl_id/response_candidates?token=abcd1234efg
 
 ### Response 200
 
@@ -62,7 +62,7 @@
 
 # メッセージ取得
 
-## GET http://hostname:port/girls/:id/messages?token=abcd1234efg
+## GET http://hostname:port/girls/:girl_id/messages?token=abcd1234efg
 
 ### Response 200
 
@@ -79,7 +79,7 @@
 
 # メッセージ既読
 
-## PUT http://hostname:port/girls/:id/messages
+## PUT http://hostname:port/girls/:girl_id/messages
 
 ### Request
 
@@ -100,7 +100,7 @@
 
 # メッセージへ返信
 
-## POST http://hostname:port/girls/:id/responses
+## POST http://hostname:port/girls/:girl_id/responses
 
 ### Request
 
