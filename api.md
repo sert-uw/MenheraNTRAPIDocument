@@ -1,6 +1,6 @@
 # ユーザ登録
 
-## POST http://sert.luna.ddns.vc:3000/users
+## POST http://hostname:port/users
 
 ### Request
 
@@ -21,7 +21,7 @@
 
 # 女の子一覧取得
 
-## GET http://sert.luna.ddns.vc:3000/girls
+## GET http://hostname:port/girls
 
 ### Response
 
@@ -39,7 +39,7 @@
 
 # 返信候補取得
 
-## GET http://sert.luna.ddns.vc:3000/girls/:id/response_candidates
+## GET http://hostname:port/girls/:id/response_candidates
 
 ### Response
 
@@ -52,7 +52,7 @@
 
 # メッセージ取得
 
-## GET http://sert.luna.ddns.vc:3000/girls/:id/messages
+## GET http://hostname:port/girls/:id/messages
 
 ### Response
 
@@ -65,7 +65,7 @@
 
 # メッセージ既読
 
-## PUT http://sert.luna.ddns.vc:3000/girls/:id/messages
+## PUT http://hostname:port/girls/:id/messages
 
 ### Request
 
@@ -79,7 +79,7 @@
 
 # メッセージへ返信
 
-## POST http://sert.luna.ddns.vc:3000/girls/:id/responses
+## POST http://hostname:port/girls/:id/responses
 
 ### Request
 
