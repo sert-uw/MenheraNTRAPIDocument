@@ -21,9 +21,9 @@
 
 # 女の子一覧取得
 
-## GET http://hostname:port/girls
+## GET http://hostname:port/girls?token=abcd1234efg
 
-### Response
+### Response 200
 
 ```
 [
@@ -37,11 +37,15 @@
 ]
 ```
 
+### Response 422
+
+認証エラー
+
 # 返信候補取得
 
-## GET http://hostname:port/girls/:id/response_candidates
+## GET http://hostname:port/girls/:id/response_candidates?token=abcd1234efg
 
-### Response
+### Response 200
 
 ```
 [
@@ -50,11 +54,15 @@
 ]
 ```
 
+### Response 422
+
+認証エラー
+
 # メッセージ取得
 
-## GET http://hostname:port/girls/:id/messages
+## GET http://hostname:port/girls/:id/messages?token=abcd1234efg
 
-### Response
+### Response 200
 
 ```
 [
@@ -62,6 +70,10 @@
   { "id": 2, "body": "なんでもない" },
 ]
 ```
+
+### Response 422
+
+認証エラー
 
 # メッセージ既読
 
@@ -72,10 +84,17 @@
 どのメッセージまで既読にするか
 
 ```
-{ "id": 30 }
+{
+  "token": "abcd1234efg",
+  "id": 30
+}
 ```
 
 ### Response 200
+
+### Response 422
+
+認証エラー
 
 # メッセージへ返信
 
@@ -85,8 +104,13 @@
 
 ```
 {
+  "token": "abcd1234efg",
   "response_id": 1
 }
 ```
 
 ### Response 200
+
+### Response 422
+
+認証エラー
