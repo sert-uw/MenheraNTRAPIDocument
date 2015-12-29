@@ -105,6 +105,7 @@
 ### Request
 
 `message_id`: 女の子の最新メッセージID
+
 `candidate_id`: 返信に選んだ候補テキストID
 
 ```
