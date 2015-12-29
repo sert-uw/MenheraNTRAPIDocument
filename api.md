@@ -104,10 +104,14 @@
 
 ### Request
 
+`message_id`: 女の子の最新メッセージID
+`candidate_id`: 返信に選んだ候補テキストID
+
 ```
 {
   "token": "abcd1234efg",
-  "response_id": 1
+  "message_id": 1,
+  "candidate_id": 1
 }
 ```
 
