@@ -68,8 +68,8 @@
 
 ```
 [
-  { "id": 1, "text": "寂しい" },
-  { "id": 2, "text": "なんでもない" },
+  { "id": 1, "message_list_id": 1, "text": "寂しい" },
+  { "id": 2, "message_list_id": 3, "text": "なんでもない" },
 ]
 ```
 
@@ -103,14 +103,11 @@
 
 ### Request
 
-`message_id`: 女の子の最新メッセージID
-
 `candidate_id`: 返信に選んだ候補テキストID
 
 ```
 {
   "token": "abcd1234efg",
-  "message_id": 1,
   "candidate_id": 1
 }
 ```
