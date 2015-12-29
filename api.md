@@ -100,7 +100,7 @@
 
 # メッセージへ返信
 
-## POST http://hostname:port/girls/:girl_id/responses
+## POST http://hostname:port/girls/:girl_id/messages
 
 ### Request
 
