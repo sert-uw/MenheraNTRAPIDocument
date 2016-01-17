@@ -60,7 +60,24 @@
 
 認証エラー
 
-# メッセージ取得
+# メッセージ取得(全件取得)
+
+## GET http://hostname:port/girls/:girl_id/messages?all=true&token=abcd1234efg
+
+### Response 200
+
+```
+[
+  { "id": 1, "from": "user or girl", "text": "寂しい" },
+  { "id": 2, "from": "user or girl", "text": "なんでもない" },
+]
+```
+
+### Response 422
+
+認証エラー
+
+# メッセージ取得(未読のみ)
 
 ## GET http://hostname:port/girls/:girl_id/messages?token=abcd1234efg
 
@@ -68,8 +85,8 @@
 
 ```
 [
-  { "id": 1, "message_list_id": 1, "text": "寂しい" },
-  { "id": 2, "message_list_id": 3, "text": "なんでもない" },
+  { "id": 1, "text": "寂しい" },
+  { "id": 2, "text": "なんでもない" },
 ]
 ```
 
